@@ -1,0 +1,111 @@
+import os
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score, mean_squared_error
+from sklearn.impute import SimpleImputer
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn import svm
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import GridSearchCV
+import xgboost as xgb
+from sklearn.preprocessing import LabelEncoder
+import tensorflow as tf
+from tensorflow.keras import layers, callbacks
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense, ConvLSTM2D, Flatten
+from sklearn.linear_model import Lasso
+import statsmodels.api as sm
+from xgboost import XGBRegressor
+from sklearn.svm import SVR
+
+
+# Load the Purple Air PM2.5 data
+pa_files = os.listdir(TRAINING_DATA_FILE_PATH)
+data = pd.concat([pd.read_csv(os.path.join('TRAINING_DATA_FILE_PATH', f)) for f in pa_files])
+
+# Convert the 'datetime' column to a datetime object
+data['datetime'] = pd.to_datetime(data['datetime'])
+
+# Set the 'datetime' column as the index
+data.set_index('datetime', inplace=True)
+
+# Aggregate the Purple Air data to the hourly granularity
+hourly_data = data.groupby(pd.Grouper(freq='1H')).mean()
+hourly_data = hourly_data.dropna(subset=['epa_pm25', 'pm25_cf_1'])
+
+
+# Load the EPA and PA sensor pairs
+sensor_pairs_file = ## FILE PATH
+sensor_pairs_df = pd.read_csv(sensor_pairs_file, sep='\t')
+sensor_pairs = sensor_pairs_df.values.tolist()
+sensor_pairs = [tuple(map(int, pair_str[0].split(','))) for pair_str in sensor_pairs]
+
+# Preprocess the data to handle missing values
+#imputer = SimpleImputer(strategy='median')
+new_X = hourly_data[['pm25_cf_1', 'temperature', 'humidity']]
+#new_X = hourly_data['calibrated']
+#X_imputed = imputer.fit_transform(new_X)
+y = hourly_data['epa_pm25']
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(new_X, y, test_size=0.3, random_state=42)
+
+
+# Fit a linear regression model to the data
+#model = LinearRegression().fit(X_train, y_train)
+#model = DecisionTreeClassifier(random_state=42)
+#model = DecisionTreeRegressor(random_state=42)
+#model = RandomForestRegressor()
+#model = svm.SVR(kernel='linear', C=1, epsilon=0.1)
+#model = KNeighborsRegressor(n_neighbors=29, leaf_size=1, p=2)
+#model = GaussianNB()
+#model = svm.SVC(kernel = 'linear')
+# Best parameters: {'colsample_bytree': 1, 'gamma': 0.2, 'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 200}
+#model = xgb.XGBRegressor(
+#    colsample_bytree=1,
+#    gamma=0.2,
+#    learning_rate=0.05,
+#    max_depth=5,
+#    n_estimators=200
+#)
+model = SVR(
+    kernel='linear',
+    C=1.0,
+    epsilon=0.1
+)
+#model = Lasso(alpha = 0.1)
+#model = XGBRegressor(n_estimators=100, learning_rate=0.1, gamma=0, subsample=1,
+#                           colsample_bytree=1, max_depth=4)
+
+# Fit decision tree classifier.
+model.fit(X_train, y_train)
+
+# Use the trained model to predict the EPA PM2.5 measurements based on the corresponding PA PM2.5 measurements
+y_pred_train = model.predict(X_train)
+y_pred_test = model.predict(X_test)
+
+# Evaluate model performance
+train_r2 = r2_score(y_train, y_pred_train)
+train_mse = mean_squared_error(y_train, y_pred_train)
+train_rmse = np.sqrt(train_mse)
+
+test_r2 = r2_score(y_test, y_pred_test)
+test_mse = mean_squared_error(y_test, y_pred_test)
+test_rmse = np.sqrt(test_mse)
+
+print('Training set:')
+print('Mean squared error:', train_mse)
+print("RMSE: ", train_rmse)
+print('R-squared:', train_r2)
+
+print('\nTesting set:')
+print('Mean squared error:', test_mse)
+print("RMSE: ", test_rmse)
+print('R-squared:', test_r2)
+

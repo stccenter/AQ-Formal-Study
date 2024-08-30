@@ -1,1 +1,3 @@
-Systematic study ***Update later***
+# GMU Systematic AQ Study.
+
+This repository is organized to accommodate various deep learning models and libraries, with a clear hierarchical structure. At the top level, folders are categorized by different neural network architectures, such as DNN, RNN, etc. Within each architecture folder, there are further subfolders that correspond to specific libraries or frameworks, such as Tensorflow or PyTorch. Each of these subfolders contains the code, scripts, and metrics.

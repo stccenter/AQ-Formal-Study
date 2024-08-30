@@ -1,0 +1,2 @@
+Average RMSE: 5.400945165686968, Average R²: 0.7592827991342864
+Average time: 3359.3186926603316 seconds

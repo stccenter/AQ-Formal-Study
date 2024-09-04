@@ -12,8 +12,7 @@ library(tensorflow)
 library(reticulate)
 library(hms)
 library(ggplot2)
-# install_tensorflow()
-#install_keras()
+
 
 #import numpy
 # Import NumPy
@@ -64,47 +63,8 @@ create_sequences <- function(X, Y, time_steps = 24) {
   return(list(Xs = Xs, ys = ys))
 }
 
-    # Testing this alternate way to create sequences 
-    # # Creating sequences with the past 24 hours to predict the next hour
-    # #sequences do not overlap as in the above function 
-    # create_sequences <- function(X, Y, time_steps = 24) {
-    #   Xs <- ys <- list()
-    #   seq_index <- seq(1,(nrow(X) - time_steps + 1),time_steps)
-    #   for (i in c(1:(length(seq_index)-1))){
-    #     Xs <- c(Xs, list(X[seq_index[i]:(seq_index[i+1] - 1), , drop = FALSE]))
-    #     ys <- c(ys, Y[(seq_index[i+1] - 1),])
-    # 
-    #     #print every 100 i
-    #     if(i %% 1000 ==0 ){
-    #       print(str_c("completed",i,"/",length(seq_index)-1))
-    #     }
-    #   }
-    # 
-    #   return(list(Xs = Xs, ys = ys))
-    # }
-
-# prepare data ------------------------------------------------------------
-
-# read in each file, add file id to differentiate between sensors, and write to a single file 
-
-# train_data_fp <- "C:/Users/ttrefoni/Documents/tt_pm25_tuning/data/TrainData/TrainData"
-# td_files <- list.files(train_data_fp)
-# 
-# df <- str_c(train_data_fp,"/",td_files) %>%
-#   lapply(read_csv) %>%
-#   bind_rows
-# 
-# df <- str_c(train_data_fp, "/", td_files) %>%
-#   lapply(function(file_path) {
-#     read_csv(file_path) %>%
-#       mutate(file_id = basename(file_path))  # Add an id column with the file name
-#   }) %>%
-#   bind_rows()
-
-
 #write/read to one csv
-    # write_csv(df,"C:/Users/ttrefoni/Documents/tt_pm25_tuning/data/TrainData/single_trainpmv2.csv")'
-      df <- read_csv("/Users/ttrefoni/Documents/tt_pm25_tuning/data/TrainData/single_trainpmv2.csv")
+df <- read_csv("/Users/ttrefoni/Documents/tt_pm25_tuning/data/TrainData/single_trainpmv2.csv")
 
 # Filter data based on a fixed PearsonR threshold (example: 0.7)
 df <- df[df$PearsonR >= 0.7,]

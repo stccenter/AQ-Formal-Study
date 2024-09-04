@@ -7,9 +7,11 @@ Instructions
 1. Install Required Packages
 Before running the script, you need to install all the necessary R packages. Open R or RStudio and run the following command to install the packages:
     
-    ```install.packages(c("caret", "tictoc", "tidyverse", "keras", "mlbench", "dplyr", "magrittr", "neuralnet", "nnet",       "tensorflow", "reticulate", "hms", "ggplot2"))```
+    ```r
+   install.packages(c("caret", "tictoc", "tidyverse", "keras", "mlbench", "dplyr", "magrittr", "neuralnet", "nnet",       "tensorflow", "reticulate", "hms", "ggplot2"))
+    ```
 
-2. Change Data Path or Python Executable Path
+3. Change Data Path or Python Executable Path
     
     To run the script on your computer, you need to update the paths to match the location of your files and Python installation.
     
@@ -49,9 +51,9 @@ Before running the script, you need to install all the necessary R packages. Ope
 
 5. How to Run the Script
 
-        1. Open R or RStudio.
-        2. Make sure you have installed all the required packages and updated the paths for your data file and Python executable.
-        3. Run the entire script or execute it line by line to process your data, train the model, and evaluate the results.
+    1. Open R or RStudio.
+    2. Make sure you have installed all the required packages and updated the paths for your data file and Python executable.
+    3. Run the entire script or execute it line by line to process your data, train the model, and evaluate the results.
 
 
 6. Find Results and Change Output Path if Necessary

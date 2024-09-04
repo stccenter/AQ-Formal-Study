@@ -2,7 +2,53 @@
 
 This repository is organized to accommodate various deep learning models and libraries, with a clear hierarchical structure. At the top level, folders are categorized by different neural network architectures, such as DNN, RNN, etc. Within each architecture folder, there are further subfolders that correspond to specific libraries or frameworks, such as Tensorflow or PyTorch. Each of these subfolders contains the code, scripts, and metrics.
 
-Data is organized into the "Training Data" folder as individual CSVs. 
+1. Organize and Locate Files
+   a. All training data files are stored in the Training Data folder. Each dataset is in CSV format and includes necessary variables such as "temperature," "relative humidity," "pm25_cf_1," and "epa_pm25."
+   b. The repository is organized by neural network architecture folders at the top level (e.g., DNN/, RNN/). Inside each architecture folder, there are subfolders for different libraries or frameworks (e.g., TensorFlow/, PyTorch/), containing the relevant model code, scripts, and metrics.
+   c.  Each library or framework subfolder contains a config folder where the configuration files for the models are stored. For example:
+TensorFlow: DNN/TensorFlow/
+RStudio: DNN/RStudio/
+PyTorch: DNN/PyTorch/
+Scikit-Learn: DNN/Scikit-Learn/
+XGBoost: DNN/XGBoost/
+
+2. Install the Required Software
+   a. TensorFlow:
+   Download and install using pip:
+   "pip install tensorflow tensorflow_decision_forests"
+   b. RStudio:
+   Download and install RStudio from RStudio's official website: https://www.rstudio.com/categories/rstudio-ide/. 
+   Install the required R packages (example):
+   "install.packages(c("caret", "reticulate"))"
+   c. PyTorch:
+   Download and install using pip:
+   "pip install torch"
+   d. Scikit-Learn
+   Download and install using pip:
+   "pip install scikit-learn"
+   e. XGBoost
+   Download and install using pip:
+   "pip install xgboost"
+
+3. Locate Configuration Files
+   Once all the necessary software is installed, locate the files for each package. These files include the preprocessing, configuration, and model run, but our focus here is the model parameters which may be altered in each of the individual scripts (see 1.c.). 
+4. Follow Model README Steps
+   Each model folder contains a README file with specific instructions on how to run the models. Follow these steps for each package:
+  Prepare the Data:
+    Preprocess the data by selecting only sensor pairs with a Pearson correlation of 0.7 or higher.
+    Reduce the dataset to the variables: "temperature," "relative humidity," "pm25_cf_1," and "epa_pm25."
+    Split the data into training and testing sets (e.g., 80/20 or 70/30).
+  Set Hyperparameters:
+    Use the default hyperparameters specified in the configuration files unless modifications are required.
+  Run the Models:
+    Execute the scripts or commands outlined in the README files to train and evaluate the models. This could involve running a Python or R script depending on the model and framework.
+
+5. Integrate All Results
+   After running the models, you should load each output into a "results.csv" file. Please include the R^2, RMSE, and elapsed time.
+   Later, we will use this "results.csv" file to visualize our data.
+   
+6. Visualize Results
+   To visualize the results, we will employ RStudio, specifically, R's package "ggplot2". Make sure to load in your consolidated "results.csv" file. 
 
 ## TensorFlow
 TensorFlow, coupled with its high-level API Keras, provides a robust environment for designing a diverse array of ML models. It is particularly effective for developing neural network models such as the ones employed in this study. TensorFlow uses 'tf.keras’ to implement regression models. RF and Lasso are built with extensions like TensorFlow Decision Forests (TF-DF) demonstrating its versatility across both deep learning and traditional ML domains. 

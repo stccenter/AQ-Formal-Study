@@ -19,19 +19,20 @@ Before running the script, you need to install all the necessary R packages. Ope
     Find line 67 in the script where the data file is loaded. Replace the file path with the path where your data file is located on your computer.
 
     Example: If your data file is located in "C:/mydata/single_trainpmv2.csv", change the line to:
-        
-        ```r
-       df <- read_csv("C:/mydata/single_trainpmv2.csv")
-       ```
+
+   ```r
+   df <- read_csv("C:/mydata/single_trainpmv2.csv")
+   ```
+
 
     * Python Executable Path:
     If you are using TensorFlow with Python, find line 133 in the script and update the Python executable path to match where Python is installed on your system.
         
         Example: If Python is installed in "C:/Python/Scripts/python.exe", change the line to:
 
-        ```r
-        use_python("C:/Python/Scripts/python.exe")
-        ```
+    ```r
+    use_python("C:/Python/Scripts/python.exe")
+    ```
 
     * Save and Read Sequence Data:
     Find lines 89 and 90 in the script where the sequence data is saved and read. Update these paths to where you want to save and read the sequence data on your computer.
@@ -73,13 +74,13 @@ Before running the script, you need to install all the necessary R packages. Ope
 
         Example paths used in the script:
 
-            ```r
-            write_csv(test_sum, "C:/Users/ttrefoni/Documents/tt_pm25_tuning/output/LSTM_pm_results_01_19_70_30.csv")
-           ```
+        ```r
+        write_csv(test_sum, "C:/Users/ttrefoni/Documents/tt_pm25_tuning/output/LSTM_pm_results_01_19_70_30.csv")
+       ```
 
-            ```r
-            file.create("C:/Users/ttrefoni/Documents/tt_pm25_tuning/output/LTSM_pm_results_01_19_70_30.txt")
-            ```
+        ```r
+        file.create("C:/Users/ttrefoni/Documents/tt_pm25_tuning/output/LTSM_pm_results_01_19_70_30.txt")
+        ```
 
     * Change Output Path:
         
@@ -87,11 +88,11 @@ Before running the script, you need to install all the necessary R packages. Ope
 
         Example: If you want to save the results in "D:/myresults/", change the lines to:
 
-            ```r
-            write_csv(test_sum, "new_output_directory/LSTM_pm_results.csv")
-            ```
-      
-            ```r
-            file.create("new_output_directory/LTSM_pm_results.txt")
-            ```
+        ```r
+        write_csv(test_sum, "new_output_directory/LSTM_pm_results.csv")
+        ```
+  
+        ```r
+        file.create("new_output_directory/LTSM_pm_results.txt")
+        ```
 

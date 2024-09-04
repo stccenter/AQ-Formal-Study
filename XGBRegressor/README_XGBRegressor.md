@@ -36,12 +36,12 @@ model = xgb.XGBRegressor(
 3. Run the Training Script
 After configuring the hyperparameters:
 Locate the Training Script:
-Make sure you are in the XGBRegressor/XGBoost/ directory where the train.py script is located.
+Make sure you are in the XGBRegressor/XGBoost/ directory where the xgboost_text.py script is located.
 Run the Training Script:
 
 Open your terminal or command prompt.
 Navigate to the XGBRegressor/XGBoost/ directory if you haven't already.
-Type in CMD: ```python xgboost_text.py```
+Type in CMD: ```python xgboost_test.py```
 
 The script will load the data, apply the configured hyperparameters, and train the XGBoost model.
 

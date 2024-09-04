@@ -51,11 +51,11 @@ Once the model training is complete, retrieve the results:
 Results Location:
 Check the terminal or command output. The results (such as R², RMSE, and elapsed time) are typically printed directly to the screen.
 Save or Copy Results:
-Manually copy the results from the terminal and paste them into a text file or directly into the overall results.csv file if it is being used for aggregation.
+Manually copy the results from the terminal and paste them into a text file or directly into the overall sample_results.csv file if it is being used for aggregation.
 
 5. Integrate Results
 Once you have the results:
 Consolidate Results:
-Open the main results.csv file used for aggregating results from all models.
+Open the main sample_results.csv file used for aggregating results from all models.
 Append the XGBoost results manually, including the model name, R², RMSE, time elapsed, and any other relevant metrics.
 Ensure that the results are formatted consistently for easy analysis and visualization later.

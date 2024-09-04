@@ -7,7 +7,7 @@ Instructions
 1. Install Required Packages
 Before running the script, you need to install all the necessary R packages. Open R or RStudio and run the following command to install the packages:
     
-    ```install.packages(c("caret", "tictoc", "tidyverse", "keras", "mlbench", "dplyr", "magrittr", "neuralnet", "nnet",       "tensorflow", "reticulate", "hms", "ggplot2"))```
+    `install.packages(c("caret", "tictoc", "tidyverse", "keras", "mlbench", "dplyr", "magrittr", "neuralnet", "nnet",       "tensorflow", "reticulate", "hms", "ggplot2"))`
 
 2. Change Data Path or Python Executable Path
     
@@ -18,22 +18,22 @@ Before running the script, you need to install all the necessary R packages. Ope
 
     Example: If your data file is located in "C:/mydata/single_trainpmv2.csv", change the line to:
         
-        ```df <- read_csv("C:/mydata/single_trainpmv2.csv")```
+        `df <- read_csv("C:/mydata/single_trainpmv2.csv")`
 
     * Python Executable Path:
     If you are using TensorFlow with Python, find line 133 in the script and update the Python executable path to match where Python is installed on your system.
         
         Example: If Python is installed in "C:/Python/Scripts/python.exe", change the line to:
 
-        ```use_python("C:/Python/Scripts/python.exe")```
+        `use_python("C:/Python/Scripts/python.exe")`
 
     * Save and Read Sequence Data:
     Find lines 89 and 90 in the script where the sequence data is saved and read. Update these paths to where you want to save and read the sequence data on your computer.
 
     Example: If you want to save and read the sequence data from "C:/mydata/sequences_pm25_group_sensor_01_20", change the lines to:
 
-    ```saveRDS(sequences, "C:/mydata/sequences_pm25_group_sensor_01_20")
-    sequences <- read_rds("C:/mydata/sequences_pm25_group_sensor_01_20")```
+    `saveRDS(sequences, "C:/mydata/sequences_pm25_group_sensor_01_20")
+    sequences <- read_rds("C:/mydata/sequences_pm25_group_sensor_01_20")`
 
 
 3. Change Hyperparameter Settings

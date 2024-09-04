@@ -55,11 +55,11 @@ This repository is organized to accommodate various deep learning models and lib
      Execute the scripts or commands outlined in the README files to train and evaluate the models. This could involve running a Python or R script depending on the model and framework.
 
 5. **Integrate All Results**  
-   After running the models, you should load each output into a "results.csv" file. Please include the R^2, RMSE, and elapsed time.  
-   Later, we will use this "results.csv" file to visualize our data.
+   After running the models, you should load each output into a "sample_results.csv" file. Please include the R^2, RMSE, and elapsed time.  
+   Later, we will use this "sample_results.csv" file to visualize our data.
 
 6. **Visualize Results**  
-   To visualize the results, we will employ RStudio, specifically, R's package "ggplot2". Make sure to load in your consolidated "results.csv" file.
+   To visualize the results, we will employ RStudio, specifically, R's package "ggplot2". Make sure to load in your consolidated "sample_results.csv" file.
 
 ## TensorFlow
 
@@ -77,10 +77,10 @@ PyTorch, known for its flexibility and powerful GPU acceleration, is used in the
 
 Scikit-Learn is a comprehensive library used extensively for data preparation, model training, and evaluation across a spectrum of ML tasks such as classification, regression, and clustering. It supports many algorithms included in this study and other advanced regression and AI/ML algorithms. This package excels due to its ease of use, efficiency, and broad applicability in tackling both simple and complex ML problems.
 
-The data is first preprocessed to only sensor pairs with a Pearson correlation of 0.7 or higher, reduced to the variables "temperature", "relative humidity", "pm25_cf_1", and "epa_pm25" which correspond to temperature, relative humidity, PM2.5 values from Purple Air sensors where the calibration factor equals 1, and PM2.5 values from the co-located EPA sensor. This is then put into a random test-train split (80/20 vs 70/30). The hyperparameters are then set in accordance with the defaults of each package. These hyperparameters are then fed into a model approximately ten times, where we then find the average of the R^2, RMSE, and time elapsed. These results are then appended to a results.csv with package name, model name, R^2, RMSE, time elapsed, etc. for later visualization.
+The data is first preprocessed to only sensor pairs with a Pearson correlation of 0.7 or higher, reduced to the variables "temperature", "relative humidity", "pm25_cf_1", and "epa_pm25" which correspond to temperature, relative humidity, PM2.5 values from Purple Air sensors where the calibration factor equals 1, and PM2.5 values from the co-located EPA sensor. This is then put into a random test-train split (80/20 vs 70/30). The hyperparameters are then set in accordance with the defaults of each package. These hyperparameters are then fed into a model approximately ten times, where we then find the average of the R^2, RMSE, and time elapsed. These results are then appended to a sample_results.csv with package name, model name, R^2, RMSE, time elapsed, etc. for later visualization.
 
 ## XGBoost
 
 XGBoost, standing for eXtreme Gradient Boosting, is a highly efficient implementation of gradient boosted decision trees designed for speed and performance. This standalone library excels in handling various types of predictive modeling tasks including regression, classification, and ranking. XGBoost can be used with several data science environments and programming languages including Python, R, and Julia, among others. XGBoost works well to build hybrid models as it integrates smoothly with both Scikit-Learn and TensorFlow via wrappers that allow its algorithms to be tuned and cross-validated in a consistent matter. It also functions well as a standalone model, using functions like XGBRegressor.
 
-The data is first preprocessed to only sensor pairs with a Pearson correlation of 0.7 or higher, reduced to the variables "temperature", "relative humidity", "pm25_cf_1", and "epa_pm25" which correspond to temperature, relative humidity, PM2.5 values from Purple Air sensors where the calibration factor equals 1, and PM2.5 values from the co-located EPA sensor. This is then put into a random test-train split (80/20 vs 70/30). The hyperparameters are then set in accordance with the defaults of each package. These hyperparameters are then fed into a model approximately ten times, where we then find the average of the R^2, RMSE, and time elapsed. These results are then appended to a results.csv with package name, model name, R^2, RMSE, time elapsed, etc. for later visualization.
+The data is first preprocessed to only sensor pairs with a Pearson correlation of 0.7 or higher, reduced to the variables "temperature", "relative humidity", "pm25_cf_1", and "epa_pm25" which correspond to temperature, relative humidity, PM2.5 values from Purple Air sensors where the calibration factor equals 1, and PM2.5 values from the co-located EPA sensor. This is then put into a random test-train split (80/20 vs 70/30). The hyperparameters are then set in accordance with the defaults of each package. These hyperparameters are then fed into a model approximately ten times, where we then find the average of the R^2, RMSE, and time elapsed. These results are then appended to a sample_results.csv with package name, model name, R^2, RMSE, time elapsed, etc. for later visualization.

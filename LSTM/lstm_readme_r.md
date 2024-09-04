@@ -7,7 +7,7 @@ Instructions
 1. Install Required Packages
 Before running the script, you need to install all the necessary R packages. Open R or RStudio and run the following command to install the packages:
     
-    `install.packages(c("caret", "tictoc", "tidyverse", "keras", "mlbench", "dplyr", "magrittr", "neuralnet", "nnet",       "tensorflow", "reticulate", "hms", "ggplot2"))`
+    ```install.packages(c("caret", "tictoc", "tidyverse", "keras", "mlbench", "dplyr", "magrittr", "neuralnet", "nnet",       "tensorflow", "reticulate", "hms", "ggplot2"))```
 
 2. Change Data Path or Python Executable Path
     
@@ -18,25 +18,26 @@ Before running the script, you need to install all the necessary R packages. Ope
 
     Example: If your data file is located in "C:/mydata/single_trainpmv2.csv", change the line to:
         
-        `df <- read_csv("C:/mydata/single_trainpmv2.csv")`
+        ```df <- read_csv("C:/mydata/single_trainpmv2.csv")```
 
     * Python Executable Path:
     If you are using TensorFlow with Python, find line 133 in the script and update the Python executable path to match where Python is installed on your system.
         
         Example: If Python is installed in "C:/Python/Scripts/python.exe", change the line to:
 
-        `use_python("C:/Python/Scripts/python.exe")`
+        ```use_python("C:/Python/Scripts/python.exe")```
 
     * Save and Read Sequence Data:
     Find lines 89 and 90 in the script where the sequence data is saved and read. Update these paths to where you want to save and read the sequence data on your computer.
 
     Example: If you want to save and read the sequence data from "C:/mydata/sequences_pm25_group_sensor_01_20", change the lines to:
 
-    `saveRDS(sequences, "C:/mydata/sequences_pm25_group_sensor_01_20")
-    sequences <- read_rds("C:/mydata/sequences_pm25_group_sensor_01_20")`
+    `saveRDS(sequences, "C:/mydata/sequences_pm25_group_sensor_01_20")```
+   
+    ```sequences <- read_rds("C:/mydata/sequences_pm25_group_sensor_01_20")```
 
 
-3. Change Hyperparameter Settings
+4. Change Hyperparameter Settings
     If you want to adjust the model's hyperparameters, such as the number of epochs (iterations) or batch size, find the relevant lines in the script:
 
     
@@ -46,14 +47,14 @@ Before running the script, you need to install all the necessary R packages. Ope
 
     ```fit_result <- fit(object = wlstm_model, x = x_train_array, y = y_train_array, epochs = 20, batch_size = 64, verbose =0)```
 
-4. How to Run the Script
+5. How to Run the Script
 
         1. Open R or RStudio.
         2. Make sure you have installed all the required packages and updated the paths for your data file and Python executable.
         3. Run the entire script or execute it line by line to process your data, train the model, and evaluate the results.
 
 
-5. Find Results and Change Output Path if Necessary
+6. Find Results and Change Output Path if Necessary
     * Results Location:
         
         By default, the script saves results as CSV and text files. The output files are saved to a specific location on your computer.
@@ -70,6 +71,7 @@ Before running the script, you need to install all the necessary R packages. Ope
 
         Example: If you want to save the results in "D:/myresults/", change the lines to:
 
-            ```write_csv(test_sum, "new_output_directory/LSTM_pm_results.csv")
-            file.create("new_output_directory/LTSM_pm_results.txt")```
+            ```write_csv(test_sum, "new_output_directory/LSTM_pm_results.csv")```
+      
+            ```file.create("new_output_directory/LTSM_pm_results.txt")```
 

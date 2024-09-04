@@ -1,0 +1,111 @@
+Model,Short_name,BS,RMSE,R2,time,split,time_proc
+Decision Tree Regressor,DT Reg.,Pytorch,NA,NA,NA,80/20,NA
+Deep Neural Network,DNN,Pytorch,4.9802,0.742,12M 52S,80/20,00:12:52
+K-Nearest Neighbors,KNN,Pytorch,NA,NA,NA,80/20,NA
+Lasso Regression,Lasso,Pytorch,NA,NA,NA,80/20,NA
+Long Short-Term Memory neural network,LSTM,Pytorch,5.15965,0.78209,5M 29S,80/20,00:05:29
+Ordinary Least Square Regression,OLS,Pytorch,5.7293,0.66898,34M 21S,80/20,00:34:21
+Random Forest,RF,Pytorch,NA,NA,NA,80/20,NA
+Recurrent Neural Networks,RNN,Pytorch,5.4578,0.7658,3M 19S,80/20,00:03:19
+Simple Neural Network,SNN,Pytorch,5.46451,0.69883,8M 45S,80/20,00:08:45
+Support Vector Regression,SVR,Pytorch,NA,NA,NA,80/20,NA
+XGBoost,XGB,Pytorch,NA,NA,NA,80/20,NA
+Decision Tree Regressor,DT Reg.,RStudio,6.028,0.7018,2M 0S,80/20,00:02:00
+Deep Neural Network,DNN,RStudio,5.336,0.76468,6M 32S,80/20,00:06:32
+K-Nearest Neighbors,KNN,RStudio,5.959,0.7128,9S,80/20,00:00:09
+Lasso Regression,Lasso,RStudio,5.6,0.7422,2S,80/20,00:00:02
+Long Short-Term Memory neural network,LSTM,RStudio,4.613,0.819,1H 34M 48S,80/20,01:34:48
+Ordinary Least Square Regression,OLS,RStudio,5.724,0.7309,2S,80/20,00:00:02
+Random Forest,RF,RStudio,5.26,0.7728,2M 23S,80/20,00:02:23
+Recurrent Neural Networks,RNN,RStudio,5.584,0.7543,47M 52S,80/20,00:47:52
+Simple Neural Network,SNN,RStudio,5.3569,0.7647,7M 34S,80/20,00:07:34
+Support Vector Regression,SVR,RStudio,5.39,0.76407,20H 56M 0S,80/20,20:56:00
+XGBoost,XGB,RStudio,5.17,0.7807,9S,80/20,00:00:09
+Decision Tree Regressor,DT Reg.,Sci-kit,5.6466,0.7358,1S,80/20,00:00:01
+Deep Neural Network,DNN,Sci-kit,5.6852,0.7467,1H 15M 32S,80/20,01:15:32
+K-Nearest Neighbors,KNN,Sci-kit,5.992,0.7018,2S,80/20,00:00:02
+Lasso Regression,Lasso,Sci-kit,5.9398,0.7111,1S,80/20,00:00:01
+Long Short-Term Memory neural network,LSTM,Sci-kit,NA,NA,NA,80/20,NA
+Ordinary Least Square Regression,OLS,Sci-kit,5.6638,0.7369,1S,80/20,00:00:01
+Random Forest,RF,Sci-kit,5.3867,0.7628,3M 58S,80/20,00:03:58
+Recurrent Neural Networks,RNN,Sci-kit,NA,NA,NA,80/20,NA
+Simple Neural Network,SNN,Sci-kit,5.4854,0.7588,3M 19S,80/20,00:03:19
+Support Vector Regression,SVR,Sci-kit,5.6871,0.732,7H 3M 27S,80/20,07:03:27
+XGBoost,XGB,Sci-kit,NA,NA,NA,80/20,NA
+Decision Tree Regressor,DT Reg.,TensorFlow,5.2659,0.775,1M 7S,80/20,00:01:07
+Deep Neural Network,DNN,TensorFlow,5.2749,0.7631,22M 32S,80/20,00:22:32
+K-Nearest Neighbors,KNN,TensorFlow,NA,NA,NA,80/20,NA
+Lasso Regression,Lasso,TensorFlow,NA,NA,NA,80/20,NA
+Long Short-Term Memory neural network,LSTM,TensorFlow,4.26,0.857,1H 31M 12S,80/20,01:31:12
+Ordinary Least Square Regression,OLS,TensorFlow,5.5575,0.7399,43M 11S,80/20,00:43:11
+Random Forest,RF,TensorFlow,5.2349,0.7756,47S,80/20,00:00:47
+Recurrent Neural Networks,RNN,TensorFlow,5.459,0.7657,5H 15M 13S,80/20,05:15:13
+Simple Neural Network,SNN,TensorFlow,5.4009,0.7593,55M 51S,80/20,00:55:51
+Support Vector Regression,SVR,TensorFlow,NA,NA,NA,80/20,NA
+XGBoost,XGB,TensorFlow,NA,NA,NA,80/20,NA
+Decision Tree Regressor,DT Reg.,Xgboost,5.5834,0.7417,1S,80/20,00:00:01
+Deep Neural Network,DNN,Xgboost,NA,NA,NA,80/20,NA
+K-Nearest Neighbors,KNN,Xgboost,6.0018,0.7016,8S,80/20,00:00:08
+Lasso Regression,Lasso,Xgboost,NA,NA,NA,80/20,NA
+Long Short-Term Memory neural network,LSTM,Xgboost,NA,NA,NA,80/20,NA
+Ordinary Least Square Regression,OLS,Xgboost,NA,NA,NA,80/20,NA
+Random Forest,RF,Xgboost,5.5833,0.7417,1S,80/20,00:00:01
+Recurrent Neural Networks,RNN,Xgboost,NA,NA,NA,80/20,NA
+Simple Neural Network,SNN,Xgboost,NA,NA,NA,80/20,NA
+Support Vector Regression,SVR,Xgboost,NA,NA,NA,80/20,NA
+XGBoost,XGB,Xgboost,5.5834,0.7417,1S,80/20,00:00:01
+Decision Tree Regressor,DT Reg.,RStudio,6.11,0.7018,2M 42S,70/30,00:02:42
+Decision Tree Regressor,DT Reg.,Sci-kit,5.6356,0.7389,1S,70/30,00:00:01
+Decision Tree Regressor,DT Reg.,Xgboost,5.6125,0.7411,1S,70/30,00:00:01
+Decision Tree Regressor,DT Reg.,Pytorch,NA,NA,NA,70/30,NA
+Decision Tree Regressor,DT Reg.,TensorFlow,5.3638,0.7565,48S,70/30,00:00:48
+Deep Neural Network,DNN,RStudio,5.426,0.7586,11M 54S,70/30,00:11:54
+Deep Neural Network,DNN,Sci-kit,5.5777,0.7426,1H 12M 22S,70/30,01:12:22
+Deep Neural Network,DNN,Xgboost,NA,NA,NA,70/30,NA
+Deep Neural Network,DNN,Pytorch,5.4908,0.74101,14M 47S,70/30,00:14:47
+Deep Neural Network,DNN,TensorFlow,5.4507,0.7565,19M 13S,70/30,00:19:13
+K-Nearest Neighbors,KNN,RStudio,6.0329,0.7032,9S,70/30,00:00:09
+K-Nearest Neighbors,KNN,Sci-kit,5.9668,0.7073,2S,70/30,00:00:02
+K-Nearest Neighbors,KNN,Xgboost,6,0.7048,8S,70/30,00:00:08
+K-Nearest Neighbors,KNN,Pytorch,NA,NA,NA,70/30,NA
+K-Nearest Neighbors,KNN,TensorFlow,NA,NA,NA,70/30,NA
+Lasso Regression,Lasso,RStudio,5.704,0.7306,1S,70/30,00:00:01
+Lasso Regression,Lasso,Sci-kit,5.914,0.7139,1S,70/30,00:00:01
+Lasso Regression,Lasso,Xgboost,NA,NA,NA,70/30,NA
+Lasso Regression,Lasso,Pytorch,NA,NA,NA,70/30,NA
+Lasso Regression,Lasso,TensorFlow,NA,NA,NA,70/30,NA
+Long Short-Term Memory neural network (LSTM),LSTM,RStudio,4.757,0.801,1H 30M 36S,70/30,01:30:36
+Long Short-Term Memory neural network (LSTM),LSTM,Sci-kit,NA,NA,NA,70/30,NA
+Long Short-Term Memory neural network (LSTM),LSTM,Xgboost,NA,NA,NA,70/30,NA
+Long Short-Term Memory neural network (LSTM),LSTM,Pytorch,5.2655,0.7821,3M 37S,70/30,00:03:37
+Long Short-Term Memory neural network (LSTM),LSTM,TensorFlow,4.2328,0.8533,1H 13M 12S,70/30,01:13:12
+Ordinary Least Square Regression (OLS),OLS,RStudio,5.7,0.7306,2S,70/30,00:00:02
+Ordinary Least Square Regression (OLS),OLS,Sci-kit,5.6707,0.7338,1S,70/30,00:00:01
+Ordinary Least Square Regression (OLS),OLS,Xgboost,NA,NA,NA,70/30,NA
+Ordinary Least Square Regression (OLS),OLS,Pytorch,5.7294,0.6673,34M 21S,70/30,00:34:21
+Ordinary Least Square Regression (OLS),OLS,TensorFlow,5.6918,0.7323,37M 45S,70/30,00:37:45
+Random Forest,RF,RStudio,5.36,0.7619,2M 23S,70/30,00:02:23
+Random Forest,RF,Sci-kit,5.4233,0.7553,3M 30S,70/30,00:03:30
+Random Forest,RF,Xgboost,5.6176,0.7486,1S,70/30,00:00:01
+Random Forest,RF,Pytorch,NA,NA,NA,70/30,NA
+Random Forest,RF,TensorFlow,5.3248,0.772,47S,70/30,00:00:47
+Recurrent Neural Networks,RNN,RStudio,5.382,0.7626,45M 18S,70/30,00:45:18
+Recurrent Neural Networks,RNN,Sci-kit,NA,NA,NA,70/30,NA
+Recurrent Neural Networks,RNN,Xgboost,NA,NA,NA,70/30,NA
+Recurrent Neural Networks,RNN,Pytorch,5.4639,0.7653,1M 12S,70/30,00:01:12
+Recurrent Neural Networks,RNN,TensorFlow,5.5208,0.7603,5H 20M 29S,70/30,05:20:29
+Simple Neural Network,SNN,RStudio,5.464,0.7528,10M 50S,70/30,00:10:50
+Simple Neural Network,SNN,Sci-kit,5.3855,0.7589,3M 6S,70/30,00:03:06
+Simple Neural Network,SNN,Xgboost,NA,NA,NA,70/30,NA
+Simple Neural Network,SNN,Pytorch,5.7053,0.6793,6M 34S,70/30,00:06:34
+Simple Neural Network,SNN,TensorFlow,5.438,0.7548,48M 41S,70/30,00:48:41
+Support Vector Regression,SVR,RStudio,5.49,0.752,20H 56M 0S,70/30,20:56:00
+Support Vector Regression,SVR,Sci-kit,5.703,0.7326,6H 19M 42S,70/30,06:19:42
+Support Vector Regression,SVR,Xgboost,NA,NA,NA,70/30,NA
+Support Vector Regression,SVR,Pytorch,NA,NA,NA,70/30,NA
+Support Vector Regression,SVR,TensorFlow,NA,NA,NA,70/30,NA
+XGBoost,XGB,RStudio,5.26,0.7702,7S,70/30,00:00:07
+XGBoost,XGB,Sci-kit,NA,NA,NA,70/30,NA
+XGBoost,XGB,Xgboost,5.6125,0.7411,1S,70/30,00:00:01
+XGBoost,XGB,Pytorch,NA,NA,NA,70/30,NA
+XGBoost,XGB,TensorFlow,NA,NA,NA,70/30,NA

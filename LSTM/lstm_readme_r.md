@@ -16,7 +16,10 @@ Before running the script, you need to install all the necessary R packages. Ope
     To run the script on your computer, you need to update the paths to match the location of your files and Python installation.
     
     * Data Path:
-    Find line 67 in the script where the data file is loaded. Replace the file path with the path where your data file is located on your computer.
+    
+    Download the sample data using this [link](https://gmuedu-my.sharepoint.com/:f:/g/personal/asrireng_gmu_edu/EojPa_64sT1KrXg5jyroHKQBP8ncOh5tfe89Has70q5vGA?e=P5vMPX)
+   
+    Find line 67 in the script where the data file is loaded. Replace the file path with the path where your downloaded data file is located on your computer.
 
     Example: If your data file is located in "C:/mydata/single_trainpmv2.csv", change the line to:
 

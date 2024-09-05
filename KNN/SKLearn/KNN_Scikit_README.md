@@ -8,7 +8,7 @@ pip install pandas numpy scikit-learn
 2. Prepare Your Data
 Make sure your dataset is ready and located in the specified directory.
 
-Directory Structure: Ensure that the directory C:/Users/Seren Smith/Documents/George Mason University/STC_Work/Purple Air/Pre-Processing/output/TrainData contains the training data files in CSV format.
+Directory Structure: Ensure that the directory C:/~/TrainData contains the training data files in CSV format.
 
 Data Filtering: The script filters the data based on a Pearson correlation threshold (e.g., 0.7). Ensure your data has a 'PearsonR' column for this filtering step.
 

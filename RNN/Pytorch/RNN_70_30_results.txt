@@ -1,0 +1,10 @@
+Run 1: RMSE = 7.3256, R^2 = 0.8149, Time Elapsed = 21.94 seconds
+Run 2: RMSE = 7.5642, R^2 = 0.8088, Time Elapsed = 21.78 seconds
+Run 3: RMSE = 7.6549, R^2 = 0.8066, Time Elapsed = 22.02 seconds
+Run 4: RMSE = 7.8203, R^2 = 0.8024, Time Elapsed = 22.18 seconds
+Run 5: RMSE = 7.3798, R^2 = 0.8135, Time Elapsed = 21.68 seconds
+Run 6: RMSE = 7.4878, R^2 = 0.8108, Time Elapsed = 22.04 seconds
+Run 7: RMSE = 9.4812, R^2 = 0.7604, Time Elapsed = 21.87 seconds
+Run 8: RMSE = 7.3788, R^2 = 0.8135, Time Elapsed = 21.64 seconds
+Run 9: RMSE = 7.2431, R^2 = 0.8170, Time Elapsed = 21.51 seconds
+Run 10: RMSE = 7.4378, R^2 = 0.8120, Time Elapsed = 23.09 seconds

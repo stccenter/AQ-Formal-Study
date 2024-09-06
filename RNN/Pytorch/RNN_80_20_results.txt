@@ -1,0 +1,13 @@
+Run 1: Mean Squared Error = 7.3421, R^2 = 0.8075, Time Elapsed = 33.64 seconds
+Run 2: Mean Squared Error = 8.5041, R^2 = 0.7771, Time Elapsed = 34.56 seconds
+Run 3: Mean Squared Error = 7.7698, R^2 = 0.7963, Time Elapsed = 34.02 seconds
+Run 4: Mean Squared Error = 6.5955, R^2 = 0.8271, Time Elapsed = 33.27 seconds
+Run 5: Mean Squared Error = 7.5619, R^2 = 0.8018, Time Elapsed = 33.22 seconds
+Run 6: Mean Squared Error = 6.7891, R^2 = 0.8220, Time Elapsed = 33.67 seconds
+Run 7: Mean Squared Error = 8.1364, R^2 = 0.7867, Time Elapsed = 33.30 seconds
+Run 8: Mean Squared Error = 7.4239, R^2 = 0.8054, Time Elapsed = 33.30 seconds
+Run 9: Mean Squared Error = 7.2574, R^2 = 0.8098, Time Elapsed = 33.25 seconds
+Run 10: Mean Squared Error = 6.8913, R^2 = 0.8194, Time Elapsed = 33.44 seconds
+
+Aggregated Results over 10 Runs:
+Mean RMSE = 7.4271, Mean R^2 = 0.8053, Mean Time Elapsed = 33.57 seconds

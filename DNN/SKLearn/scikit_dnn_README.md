@@ -12,7 +12,7 @@ Your data is located in multiple CSV files within a directory. The script automa
 
 Step-by-step to load data:
 
-Directory: Ensure all data files are stored in the directory 'C:/Users/Seren Smith/Documents/George Mason University/STC_Work/Purple Air/Pre-Processing/output/TrainData'.
+Directory: Ensure all data files are stored in the directory 'C:/~/TrainData'.
 
 Filter by PearsonR: The script filters out rows with a PearsonR value below 0.7:
 

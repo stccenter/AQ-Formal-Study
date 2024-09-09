@@ -9,7 +9,7 @@ Your data is stored in multiple CSV files within a directory, and the code autom
 
 Step-by-step to load data:
 
-Directory: All data files should be located in 'C:/Users/Seren Smith/Documents/George Mason University/STC_Work/Purple Air/Pre-Processing/output/TrainData'.
+Directory: All data files should be located in 'C:/~/TrainData'.
 
 Filter by PearsonR: Rows with a PearsonR value below 0.7 will be excluded:
 

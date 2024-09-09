@@ -68,7 +68,7 @@ for(i in c(1:2)){
   
   # Save the model
   write_rds(svm_model_pm, str_c("/output_models/svm_model_12_15_", i))
-  svm_model_pm <- read_rds("C:/Users/ttrefoni/Documents/tt_pm25tuning/output_models/svm_model_12_15_2")
+  svm_model_pm <- read_rds("C:/PATH/svm_model_12_15_2")
   
   # Test the model and capture prediction time
   time_start <- Sys.time()
